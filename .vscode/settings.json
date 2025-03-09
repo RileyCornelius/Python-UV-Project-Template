@@ -1,0 +1,22 @@
+{
+    // formatting
+    "ruff.lineLength": 150,
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports.ruff": "explicit",
+            "source.fixAll.ruff": "explicit"
+        },
+    },
+    // python environment
+    "python.envFile": "${workspaceRoot}/.env",
+    "python.terminal.activateEnvironment": true,
+    // hide files in the explorer
+    "files.exclude": {
+        "**/.git": true,
+        "**/__pycache__": true,
+        ".python-version": true,
+        "uv.lock": true,
+    },
+}
