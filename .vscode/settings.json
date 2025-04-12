@@ -1,17 +1,21 @@
 {
     // formatting
-    "ruff.lineLength": 150,
     "[python]": {
         "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
         "editor.defaultFormatter": "charliermarsh.ruff",
         "editor.codeActionsOnSave": {
             "source.organizeImports.ruff": "explicit",
             "source.fixAll.ruff": "explicit"
         },
+        "files.autoSave": "onFocusChange",
     },
-    // python environment
+    // python settings
     "python.envFile": "${workspaceRoot}/.env",
     "python.terminal.activateEnvironment": true,
+    "python.analysis.autoSearchPaths": true,
+    "python.analysis.autoFormatStrings": true,
+    "python.analysis.autoImportCompletions": true,
     // hide files in the explorer
     "files.exclude": {
         "**/.git": true,
@@ -19,4 +23,10 @@
         ".python-version": true,
         "uv.lock": true,
     },
+    // Test settings
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.cwd": "${workspaceFolder}/tests",
+    "python.testing.pytestPath": "${workspaceFolder}/.venv/bin/pytest",
+    "python.testing.autoTestDiscoverOnSaveEnabled": true,
 }

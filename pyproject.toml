@@ -1,6 +1,20 @@
 [project]
 name = "python-template"
 version = "0.1.0"
-requires-python = ">=3.11"
-dependencies = [
+requires-python = ">=3.12"
+dependencies = ["pytest>=8.3.5"]
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+select = [
+    "E",   # pycodestyle
+    "W",   # pyflakes
+    "B",   # flake8-bugbear
+    "UP",  # pyupgrade
+    "SIM", # flake8-simplify
+    "RUF", # ruff
 ]
