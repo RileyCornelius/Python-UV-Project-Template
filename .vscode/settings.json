@@ -1,17 +1,21 @@
 {
-    // formatting
-    "ruff.lineLength": 150,
+    // formatting settings
+    "black-formatter.args": [
+        "--line-length",
+        "150"
+    ],
     "[python]": {
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.codeActionsOnSave": {
-            "source.organizeImports.ruff": "explicit",
-            "source.fixAll.ruff": "explicit"
+            "source.organizeImports": "explicit",
+            "source.fixAll": "explicit"
         },
     },
-    // python environment
+    // python settings
     "python.envFile": "${workspaceRoot}/.env",
     "python.terminal.activateEnvironment": true,
+    "python.analysis.autoFormatStrings": true,
     // hide files in the explorer
     "files.exclude": {
         "**/.git": true,
