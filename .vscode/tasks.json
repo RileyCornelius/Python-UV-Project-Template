@@ -10,5 +10,41 @@
             "command": "uv sync",
             "problemMatcher": []
         },
+        {
+            "label": "uv add requirements",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "uv add -r requirements.txt",
+            "problemMatcher": []
+        },
+        {
+            "label": "uv tree",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "uv tree",
+            "problemMatcher": []
+        },
+        {
+            "label": "uvx isort all",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "uvx isort .",
+            "problemMatcher": []
+        },
+        {
+            "label": "uvx type check",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "uvx ty check",
+            "problemMatcher": []
+        }
     ]
 }
