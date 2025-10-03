@@ -4,8 +4,13 @@
         "--line-length",
         "150"
     ],
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
     "[python]": {
         "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.codeActionsOnSave": {
             "source.organizeImports": "explicit",
@@ -13,7 +18,6 @@
         },
     },
     // python settings
-    "python.envFile": "${workspaceRoot}/.env",
     "python.terminal.activateEnvironment": true,
     "python.analysis.autoFormatStrings": true,
     // hide files in the explorer
